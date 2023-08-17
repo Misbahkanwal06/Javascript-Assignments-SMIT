@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Assets/app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Q1. Show an alert box on click on a link. -->
+    <a href="#" onclick="box()">Click Here</a>
+
+
+    <!-- Q2. Display some Mobile images in browser. On click on an
+image Show the message in alert to user. -->
+    <div class="div">
+
+        <img src="./Assets/images/img1.jpg" alt="" onclick="msg()">
+
+    </div>
+
+
+    <!-- Q3.3. Display 10 student records in table and each row should contain a delete
+button. If you click on a button to delete a record, entire row should be
+deleted. -->
+
+    <table>
+
+        <tr>
+
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+
+        </tr>
+
+
+        <tr class="btn">
+            <td>0</td>
+            <td>Jhon</td>
+            <td>10</td>
+            <td><button onclick="remove(this)">delete</button></td>
+        </tr>
+        <tr class="btn">
+            <td>1</td>
+            <td>Jhony</td>
+            <td>10</td>
+            <td><button onclick="remove(this)">delete</button></td>
+        </tr>
+        <tr class="btn">
+
+            <td>2</td>
+            <td>Mark</td>
+            <td>10</td>
+            <td><button onclick="remove(this)">delete</button></td>
+
+        </tr>
+        <tr class="btn">
+
+            <td>3</td>
+            <td>James</td>
+            <td>10</td>
+            <td><button onclick="remove(this)">delete</button></td>
+
+        </tr>
+
+        <tr class="btn">
+            <td>4</td>
+            <td>Alizy</td>
+            <td>10</td>
+            <td><button onclick="remove(this)" class="btn">delete</button></td>
+
+        </tr>
+
+    </table>
+
+    <!--Q4 //Display an image in browser. Change the picture on mouseover and set the
+    first picture on mouseout. -->
+
+    <img src="./Assets/images/img1.jpg" onmouseover="mouseOver(this,'./Assets/images/img2.jpg')"
+        onmouseout="mouseOut(this,'./Assets/images/img1.jpg')">
+    <!-- OR -->
+    <!-- <img src="./Assets/images/img1.jpg" onmouseover="this.src = './Assets/images/img2.jpg'" 
+    onmouseout="this.src= './Assets/images/img1.jpg'"  > -->
+
+
+
+    <!-- Q5. 5. Show a counter in browser. Counter should increase on click on increase
+button and decrease on click on decrease button. And show updated counter
+value in browser. -->
+
+<fieldset style="width: 20%;">
+    <div class="divs">
+        <h1 id="counter" >00</h1>
+    </div>
+    <button onclick="decrease()">Decrease</button>
+    <button onclick="increase()">Increase</button>
+</fieldset>
+  
+</body>
+
+</html>
